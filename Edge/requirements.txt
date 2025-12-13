@@ -1,0 +1,8 @@
+# --- Зависимости для Cloud Server (cloud_server.py) ---
+fastapi
+uvicorn[standard]  # Включает uvicorn и дополнительные пакеты, например, для работы с wss/https
+
+# --- Зависимости для Edge Server (main.py) ---
+paho-mqtt          # Для работы с MQTT (подключение к Wokwi)
+websocket-client   # Для WebSocket-клиента (отправка данных в Cloud Server)
+numpy              # Для математических вычислений и агрегации данных
